@@ -176,21 +176,13 @@ def convert(fit_path: str, out_prefix: str):
 
     print(f"✅ Wrote:\n  • {records_csv}\n  • {laps_csv}")
 
-# def main():
-#     if len(sys.argv) != 3:
-#         print("Usage: python fit_to_csv.py input.fit output_prefix")
-#         sys.exit(1)
-#     fit_path = sys.argv[1]
-#     out_prefix = sys.argv[2]
-#     convert(fit_path, out_prefix)
-
 def main():
-    if len(sys.argv) < 2:
-        print("Drag a .fit file onto this app.")
-        return
+    if len(sys.argv) != 3:
+        print("Usage: python main.py input.fit output_prefix")
+        sys.exit(1)
     fit_path = sys.argv[1]
-    base, _ = os.path.splitext(fit_path)
-    convert(fit_path, base)
+    out_prefix = sys.argv[2]
+    convert(fit_path, out_prefix)
 
 if __name__ == "__main__":
     main()
