@@ -178,7 +178,7 @@ def convert(fit_path: str, out_prefix: str):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python fit_to_csv.py input.fit output_prefix")
+        print("Usage: python main.py input.fit output_prefix")
         sys.exit(1)
     fit_path = sys.argv[1]
     out_prefix = sys.argv[2]
