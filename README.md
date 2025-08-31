@@ -23,7 +23,7 @@ FitToCSV is a Python project for converting fitness data into CSV format. This r
 ### Usage
 Run the main script:
 ```bash
-python main.py --input <input_file.fit> --output <output_file.csv>
+python main.py <input_file.fit> <output_prefix>
 ```
 
 ## Project Structure
